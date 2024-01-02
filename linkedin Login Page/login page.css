@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* FONTS */
+    --FF: "Nunito", sans-serif;
+    --FF-HEADINGS: "Fugaz One", cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    /* COLORS */
+    --BLUE: rgb(16, 87, 175);
+    --CONTAINER: WHITE;
+}
+
+html {
+    background-color: whitesmoke;
+    font-family: var(--FF);
+}
+.logo {
+    font-weight: bolder;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+input,
+button,
+textarea {
+    font: inherit;
+}
+.container {
+    padding: 40px 20px;
+    margin: o auto solid 3px;
+    background-color: var(--CONTAINER);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 4px rgb(0 0 0 / 0.2);
+}
+
+input {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.formy {
+    padding: 0px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
+}
+.blue {
+    font-weight: bolder;
+    color: var(--BLUE);
+}
+a {
+    text-decoration: none;
+}
+p {
+    padding: 10px 0px 10px 0px;
+}
+/* .submit{
+    padding: 10px auto 10px auto;
+} */
+#submit{
+    padding: 20px auto;
+    border: 0px;
+    border-radius: 20px;
+    background-color: var(--BLUE);
+    color: white;
+}
